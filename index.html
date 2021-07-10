@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Crypto Tracker</title>
+</head>
+<body style="background-image: url('cryptochips.jpg');">
+        <div class="container">
+        <div class="row justify-content-center">
+            <h1 class="col-md-7 text-center"  style="color: red;">CRYPTO TRACKER</h1>
+            <h1 style="font-family: 'Courier New', Courier, monospace;"></h1>
+            <h4 class="col-md-7 text-center" style="color: wheat;">By Shibabrata Ghosh</h4>
+            <div class="col-md-6 row justify-content-center">
+                <div class="col-10">
+                    <form action="" id="searchForm">
+                        <div class="form-row">
+                            <div class="col-12 form-group">
+                                <label for="xyz" style="color: wheat;"><b>Coin Type</b></label>
+                                <select name="coinType" class="form-control" id="xyz">
+                                    <option value="btc-usd">Bitcoin - USD</option>
+                                    <option value="doge-usd">Dogecoin - USD</option>
+                                    <option value="eth-usd">Etherum - USD</option>
+                                    <option value="btc-doge">Bitcoin - Dogecoin</option>
+                                    <option value="bnb-usd">Binance - USD</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="col-12 btn btn-success">Get Price</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-7 text-center row justify-content-center">
+                <table class="col-md-7 m-2" border="2px" id="tableResult" style="background-color: rgb(247, 247, 134);" style="border-color:red;">
+                    
+                </table>
+            </div>
+            
+        </div>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
